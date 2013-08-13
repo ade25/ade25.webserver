@@ -23,7 +23,8 @@ $ pip install -U setuptools
 $ pip install fabric
 ```
 
-Next you need to setup our global fabfile collection
+Next you need to setup our global fabfile collection by using a local copy of
+*ade25.fabfiles* and making it available to the installed fabfile:
 
 ```bash
 $ git clone git@github.com:ade25/ade25.fabfiles.git
@@ -32,7 +33,9 @@ $ python setup.py develop
 ```
 
 In order to use the environment you need to clone
-a dedicated webserver buildout into your working directory, e.g.
+a dedicated webserver buildout into your working directory and run the provided
+**development.cfg** profile. this will build a local fabfile holding the server
+specific configuration (like hosted sites, servername etc)
 
 ```bash
 $ git clone git@github.com:ade25/z1.git
@@ -40,14 +43,12 @@ $ cd ./z1
 $ python bootstrap.py -c development.cfg
 ```
 
-This should buildout a local fabfile with the buildout specific details.
-
 
 Usage
 =====
 
 In order to work with your webserver configuration and deployment setup you
-need to have the venv activated and local fabfiles already built.
+need to have the *venv* always activated and local fabfiles already built.
 
 Example:
 
