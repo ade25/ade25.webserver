@@ -11,12 +11,8 @@ Just boostrap the buildout and run
 Note:
 -----
 
-In order to make this reusable it could also be an option to add a dedicated 
-buildout profile **servername.cfg** to be explicit and potentially be able to
-run this simple webserver setup on several machines (via different profiles).
-
-Another option would be to branch the buildout for each dedicated server and
-keep the master branch updated.
+In order to make this work locally you need to take a view extra steps. Please
+refer to the [setup local directory documentation](docs/setup.md)
 
 
 Provided services:
