@@ -42,6 +42,7 @@ $ cd ~/ops
 $ git clone git@github.com:ade25/z1.git
 $ cd ./z1
 $ python bootstrap.py -c development.cfg
+$ bin/buildout -c development.cfg
 ```
 
 
