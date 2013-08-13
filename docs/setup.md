@@ -16,8 +16,8 @@ install a few dependencies
 
 ``` bash
 $ cd ~/
-$ ../python/bin/virtualenv-2.7 devop
-$ cd ~/devop
+$ ../python/bin/virtualenv-2.7 ops
+$ cd ~/ops
 $ source bin/activate
 $ pip install -U setuptools
 $ pip install fabric
@@ -38,6 +38,7 @@ a dedicated webserver buildout into your working directory and run the provided
 specific configuration (like hosted sites, servername etc)
 
 ```bash
+$ cd ~/ops
 $ git clone git@github.com:ade25/z1.git
 $ cd ./z1
 $ python bootstrap.py -c development.cfg
@@ -53,7 +54,7 @@ need to have the *venv* always activated and local fabfiles already built.
 Example:
 
 ```bash
-$ cd ~/devop
+$ cd ~/ops
 $ source bin/activate
 (devop)$ cd ./z1
 (devop)$ fab restart_varnish
